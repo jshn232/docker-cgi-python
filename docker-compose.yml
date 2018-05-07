@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  pycgi:
+    image: pycgi_2
+    restart: unless-stopped
+    volumes:
+      - ~/Documents/Code/git/docker-cgi-python/cgi-bin:/production/www/cgi-bin
+      - ~/Documents/Code/git/docker-cgi-python/www:/var/www/html
+    ports:
+      - "2345:80"
