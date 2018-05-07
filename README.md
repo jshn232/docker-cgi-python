@@ -21,9 +21,8 @@ docker exec -it mypycgi /bin/bash
 ```
 
 You can Access from the below URL.
-* [http://localhost:8883/cgi-bin2/test.cgi](http://localhost:8883/cgi-bin2/test.cgi)
-* [http://localhost:8883/cgi-bin2/test2.cgi](http://localhost:8883/cgi-bin2/test.cgi)
-* [http://localhost:8883/cgi-bin2/test3.cgi](http://localhost:8883/cgi-bin2/test.cgi)
+* [http://localhost:2345](http://localhost:2345)
+* [http://localhost:2345/test4.py](http://localhost:2345/cgi-bin2/test4.py)
 
 ## Allow Python version
 
