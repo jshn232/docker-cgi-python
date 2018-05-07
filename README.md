@@ -11,8 +11,8 @@ docker build -t pycgi_2 .
 docker run \
 -p 2345:80 \
 -d \
--v ~/Documents/Code/git/docker-cgi-python/cgi-bin:/production/www/cgi-bin \
--v ~/Documents/Code/git/docker-cgi-python/www:/var/www/html \
+-v your_git_path/docker-cgi-python/cgi-bin:/production/www/cgi-bin \
+-v your_git_path/docker-cgi-python/www:/var/www/html \
 --name mypycgi \
 pycgi_2
 
