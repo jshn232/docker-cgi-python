@@ -6,11 +6,18 @@ With this docker image, you can create simple web application with cgi.
 ## How to use
 ```bash
 # build image
-docker build -t pycgi .
+docker build -t pycgi_2 .
 # run image
-docker run -p 8883:80 -d pycgi
+docker run \
+-p 2345:80 \
+-d \
+-v ~/Documents/Code/git/docker-cgi-python/cgi-bin:/production/www/cgi-bin \
+-v ~/Documents/Code/git/docker-cgi-python/www:/var/www/html \
+--name mypycgi \
+pycgi_2
+
 # exec container
-docker exec -it `hash ID` /bin/bash
+docker exec -it mypycgi /bin/bash
 ```
 
 You can Access from the below URL.
