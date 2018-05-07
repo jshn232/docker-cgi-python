@@ -12,13 +12,14 @@ Run apt-get -y install libmysqlclient-dev
 RUN apt-get -y install vim
 RUN apt-get -y install python-pip
 RUN pip install MySQL-python
+RUN pip install paramiko
 # Python3.6
 RUN apt-get -y install python3.6
 Run apt-get -y install wget
 RUN wget https://bootstrap.pypa.io/get-pip.py
-RUN python3.6 get-pip.py
+#RUN python3.6 get-pip.py
 RUN apt-get -y install python3.6-dev
-RUN python3.6 -m pip install mysqlclient
+#RUN python3.6 -m pip install mysqlclient
 # Http settings
 ENV APACHE_RUN_USER www-data
 ENV APACHE_RUN_GROUP www-data
